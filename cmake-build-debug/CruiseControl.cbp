@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CruiseControl"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/michal/CruiseControl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CruiseControl.elf">
+				<Option output="/home/michal/CruiseControl/cmake-build-debug/CruiseControl.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CruiseControl/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32L432xx"/>
+					<Add directory="/home/michal/CruiseControl/Core/Inc"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/Include"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 CruiseControl.elf"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CruiseControl.elf/fast">
+				<Option output="/home/michal/CruiseControl/cmake-build-debug/CruiseControl.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/michal/CruiseControl/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32L432xx"/>
+					<Add directory="/home/michal/CruiseControl/Core/Inc"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/Include"/>
+					<Add directory="/home/michal/CruiseControl/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include/c++/12.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 CruiseControl.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/michal/CruiseControl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/michal/CruiseControl/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/michal/CruiseControl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/commands_ELM.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/main.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/stm32l4xx_hal_conf.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/stm32l4xx_it.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/main.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/stm32l4xx_hal_msp.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/stm32l4xx_it.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/syscalls.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/sysmem.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/system_stm32l4xx.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Startup/startup_stm32l432kcux.s">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l432xx.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/LICENSE.txt">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Device/ST/STM32L4xx/License.md">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_armv81mml.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm35p.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/CMSIS/LICENSE.txt">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_cortex.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_crs.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dac.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dma.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_dmamux.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_exti.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_lpuart.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_pwr.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_rcc.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_system.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usart.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_utils.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/LICENSE.txt">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/License.md">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/STM32L432KCUX_FLASH.ld">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
