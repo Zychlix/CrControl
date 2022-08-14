@@ -48,14 +48,14 @@ void car_throttle_handler(car_t * instance)
 void car_controller_flush_throttle(car_t * instance)
 {
     HAL_DAC_SetValue(instance->throttle_dac_handler, CAR_DAC_CHANNEL, 0, instance->throttle_raw_out);
-    if(instance->throttle_raw_out>100)      //Set something reasonable
+    if(instance->throttle_raw_out>300)      //Set something reasonable
     {
-        HAL_GPIO_WritePin(instance->ecu_en_port,instance->ecu_en_pin,1);
+        HAL_GPIO_WritePin(instance->ecu_en_port,instance->ecu_en_pin,0);
         //HAL_GPIO_WritePin(PEDAL_EN_Port,PEDAL_EN_Pin,1);
 
     } else
     {
-        HAL_GPIO_WritePin(instance->ecu_en_port,instance->ecu_en_pin,0);
+        HAL_GPIO_WritePin(instance->ecu_en_port,instance->ecu_en_pin,1);
 
     }
 

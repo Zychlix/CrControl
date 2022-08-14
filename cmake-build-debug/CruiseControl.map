@@ -1825,234 +1825,234 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.1.0/thumb/v7e-m/nofp/crtn.o
                 0x0000000008001472       0x14 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
                 0x0000000008001472                car_controller_get_accelerator
  .text.car_controller_flush_throttle
-                0x0000000008001486       0x2e CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
+                0x0000000008001486       0x30 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
                 0x0000000008001486                car_controller_flush_throttle
  .text.car_throttle_handler
-                0x00000000080014b4       0x14 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
-                0x00000000080014b4                car_throttle_handler
+                0x00000000080014b6       0x14 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
+                0x00000000080014b6                car_throttle_handler
+ *fill*         0x00000000080014ca        0x2 
  .text.Reset_Handler
-                0x00000000080014c8       0x50 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj
-                0x00000000080014c8                Reset_Handler
+                0x00000000080014cc       0x50 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj
+                0x00000000080014cc                Reset_Handler
  .text.Default_Handler
-                0x0000000008001518        0x2 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj
-                0x0000000008001518                RTC_Alarm_IRQHandler
-                0x0000000008001518                EXTI2_IRQHandler
-                0x0000000008001518                TIM1_CC_IRQHandler
-                0x0000000008001518                TSC_IRQHandler
-                0x0000000008001518                TAMP_STAMP_IRQHandler
-                0x0000000008001518                EXTI3_IRQHandler
-                0x0000000008001518                LPTIM2_IRQHandler
-                0x0000000008001518                I2C3_ER_IRQHandler
-                0x0000000008001518                EXTI0_IRQHandler
-                0x0000000008001518                CAN1_RX0_IRQHandler
-                0x0000000008001518                FPU_IRQHandler
-                0x0000000008001518                TIM1_UP_TIM16_IRQHandler
-                0x0000000008001518                SPI1_IRQHandler
-                0x0000000008001518                TIM6_DAC_IRQHandler
-                0x0000000008001518                DMA2_Channel2_IRQHandler
-                0x0000000008001518                DMA1_Channel4_IRQHandler
-                0x0000000008001518                ADC1_IRQHandler
-                0x0000000008001518                DMA1_Channel7_IRQHandler
-                0x0000000008001518                CAN1_RX1_IRQHandler
-                0x0000000008001518                DMA2_Channel1_IRQHandler
-                0x0000000008001518                QUADSPI_IRQHandler
-                0x0000000008001518                I2C1_EV_IRQHandler
-                0x0000000008001518                DMA1_Channel6_IRQHandler
-                0x0000000008001518                DMA2_Channel4_IRQHandler
-                0x0000000008001518                RCC_IRQHandler
-                0x0000000008001518                TIM1_TRG_COM_IRQHandler
-                0x0000000008001518                DMA1_Channel1_IRQHandler
-                0x0000000008001518                Default_Handler
-                0x0000000008001518                DMA2_Channel7_IRQHandler
-                0x0000000008001518                EXTI15_10_IRQHandler
-                0x0000000008001518                TIM7_IRQHandler
-                0x0000000008001518                I2C3_EV_IRQHandler
-                0x0000000008001518                USB_IRQHandler
-                0x0000000008001518                EXTI9_5_IRQHandler
-                0x0000000008001518                RTC_WKUP_IRQHandler
-                0x0000000008001518                PVD_PVM_IRQHandler
-                0x0000000008001518                CAN1_TX_IRQHandler
-                0x0000000008001518                DMA2_Channel5_IRQHandler
-                0x0000000008001518                CRS_IRQHandler
-                0x0000000008001518                DMA1_Channel5_IRQHandler
-                0x0000000008001518                EXTI4_IRQHandler
-                0x0000000008001518                RNG_IRQHandler
-                0x0000000008001518                DMA1_Channel3_IRQHandler
-                0x0000000008001518                COMP_IRQHandler
-                0x0000000008001518                WWDG_IRQHandler
-                0x0000000008001518                LPUART1_IRQHandler
-                0x0000000008001518                DMA2_Channel6_IRQHandler
-                0x0000000008001518                TIM2_IRQHandler
-                0x0000000008001518                EXTI1_IRQHandler
-                0x0000000008001518                USART2_IRQHandler
-                0x0000000008001518                DMA1_Channel2_IRQHandler
-                0x0000000008001518                CAN1_SCE_IRQHandler
-                0x0000000008001518                FLASH_IRQHandler
-                0x0000000008001518                USART1_IRQHandler
-                0x0000000008001518                SPI3_IRQHandler
-                0x0000000008001518                I2C1_ER_IRQHandler
-                0x0000000008001518                SWPMI1_IRQHandler
-                0x0000000008001518                LPTIM1_IRQHandler
-                0x0000000008001518                SAI1_IRQHandler
-                0x0000000008001518                DMA2_Channel3_IRQHandler
-                0x0000000008001518                TIM1_BRK_TIM15_IRQHandler
- *fill*         0x000000000800151a        0x2 
+                0x000000000800151c        0x2 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj
+                0x000000000800151c                RTC_Alarm_IRQHandler
+                0x000000000800151c                EXTI2_IRQHandler
+                0x000000000800151c                TIM1_CC_IRQHandler
+                0x000000000800151c                TSC_IRQHandler
+                0x000000000800151c                TAMP_STAMP_IRQHandler
+                0x000000000800151c                EXTI3_IRQHandler
+                0x000000000800151c                LPTIM2_IRQHandler
+                0x000000000800151c                I2C3_ER_IRQHandler
+                0x000000000800151c                EXTI0_IRQHandler
+                0x000000000800151c                CAN1_RX0_IRQHandler
+                0x000000000800151c                FPU_IRQHandler
+                0x000000000800151c                TIM1_UP_TIM16_IRQHandler
+                0x000000000800151c                SPI1_IRQHandler
+                0x000000000800151c                TIM6_DAC_IRQHandler
+                0x000000000800151c                DMA2_Channel2_IRQHandler
+                0x000000000800151c                DMA1_Channel4_IRQHandler
+                0x000000000800151c                ADC1_IRQHandler
+                0x000000000800151c                DMA1_Channel7_IRQHandler
+                0x000000000800151c                CAN1_RX1_IRQHandler
+                0x000000000800151c                DMA2_Channel1_IRQHandler
+                0x000000000800151c                QUADSPI_IRQHandler
+                0x000000000800151c                I2C1_EV_IRQHandler
+                0x000000000800151c                DMA1_Channel6_IRQHandler
+                0x000000000800151c                DMA2_Channel4_IRQHandler
+                0x000000000800151c                RCC_IRQHandler
+                0x000000000800151c                TIM1_TRG_COM_IRQHandler
+                0x000000000800151c                DMA1_Channel1_IRQHandler
+                0x000000000800151c                Default_Handler
+                0x000000000800151c                DMA2_Channel7_IRQHandler
+                0x000000000800151c                EXTI15_10_IRQHandler
+                0x000000000800151c                TIM7_IRQHandler
+                0x000000000800151c                I2C3_EV_IRQHandler
+                0x000000000800151c                USB_IRQHandler
+                0x000000000800151c                EXTI9_5_IRQHandler
+                0x000000000800151c                RTC_WKUP_IRQHandler
+                0x000000000800151c                PVD_PVM_IRQHandler
+                0x000000000800151c                CAN1_TX_IRQHandler
+                0x000000000800151c                DMA2_Channel5_IRQHandler
+                0x000000000800151c                CRS_IRQHandler
+                0x000000000800151c                DMA1_Channel5_IRQHandler
+                0x000000000800151c                EXTI4_IRQHandler
+                0x000000000800151c                RNG_IRQHandler
+                0x000000000800151c                DMA1_Channel3_IRQHandler
+                0x000000000800151c                COMP_IRQHandler
+                0x000000000800151c                WWDG_IRQHandler
+                0x000000000800151c                LPUART1_IRQHandler
+                0x000000000800151c                DMA2_Channel6_IRQHandler
+                0x000000000800151c                TIM2_IRQHandler
+                0x000000000800151c                EXTI1_IRQHandler
+                0x000000000800151c                USART2_IRQHandler
+                0x000000000800151c                DMA1_Channel2_IRQHandler
+                0x000000000800151c                CAN1_SCE_IRQHandler
+                0x000000000800151c                FLASH_IRQHandler
+                0x000000000800151c                USART1_IRQHandler
+                0x000000000800151c                SPI3_IRQHandler
+                0x000000000800151c                I2C1_ER_IRQHandler
+                0x000000000800151c                SWPMI1_IRQHandler
+                0x000000000800151c                LPTIM1_IRQHandler
+                0x000000000800151c                SAI1_IRQHandler
+                0x000000000800151c                DMA2_Channel3_IRQHandler
+                0x000000000800151c                TIM1_BRK_TIM15_IRQHandler
+ *fill*         0x000000000800151e        0x2 
  .text.HAL_InitTick
-                0x000000000800151c       0x50 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x000000000800151c                HAL_InitTick
+                0x0000000008001520       0x50 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x0000000008001520                HAL_InitTick
  .text.HAL_Init
-                0x000000000800156c       0x1e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x000000000800156c                HAL_Init
- *fill*         0x000000000800158a        0x2 
+                0x0000000008001570       0x1e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x0000000008001570                HAL_Init
+ *fill*         0x000000000800158e        0x2 
  .text.HAL_IncTick
-                0x000000000800158c       0x18 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x000000000800158c                HAL_IncTick
+                0x0000000008001590       0x18 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x0000000008001590                HAL_IncTick
  .text.HAL_GetTick
-                0x00000000080015a4        0xc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x00000000080015a4                HAL_GetTick
+                0x00000000080015a8        0xc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x00000000080015a8                HAL_GetTick
  .text.HAL_Delay
-                0x00000000080015b0       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x00000000080015b0                HAL_Delay
+                0x00000000080015b4       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x00000000080015b4                HAL_Delay
  .text.LL_ADC_REG_SetSequencerRanks
-                0x00000000080015d8       0x2e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x00000000080015dc       0x2e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.LL_ADC_SetChannelSamplingTime
-                0x0000000008001606       0x2a CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x000000000800160a       0x2a CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
  .text.HAL_ADC_Init
-                0x0000000008001630      0x1dc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x0000000008001630                HAL_ADC_Init
+                0x0000000008001634      0x1dc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x0000000008001634                HAL_ADC_Init
  .text.HAL_ADC_GetValue
-                0x000000000800180c        0x6 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x000000000800180c                HAL_ADC_GetValue
- *fill*         0x0000000008001812        0x2 
+                0x0000000008001810        0x6 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x0000000008001810                HAL_ADC_GetValue
+ *fill*         0x0000000008001816        0x2 
  .text.HAL_ADC_ConfigChannel
-                0x0000000008001814      0x43c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x0000000008001814                HAL_ADC_ConfigChannel
+                0x0000000008001818      0x43c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x0000000008001818                HAL_ADC_ConfigChannel
  .text.ADC_Enable
-                0x0000000008001c50       0xdc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x0000000008001c50                ADC_Enable
+                0x0000000008001c54       0xdc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x0000000008001c54                ADC_Enable
  .text.HAL_ADC_Start
-                0x0000000008001d2c       0x8c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
-                0x0000000008001d2c                HAL_ADC_Start
+                0x0000000008001d30       0x8c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj
+                0x0000000008001d30                HAL_ADC_Start
  .text.__NVIC_SetPriority
-                0x0000000008001db8       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x0000000008001dbc       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x0000000008001de0       0x3e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- *fill*         0x0000000008001e1e        0x2 
+                0x0000000008001de4       0x3e CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ *fill*         0x0000000008001e22        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0000000008001e20       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x0000000008001e20                HAL_NVIC_SetPriorityGrouping
+                0x0000000008001e24       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x0000000008001e24                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0000000008001e44       0x20 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x0000000008001e44                HAL_NVIC_SetPriority
+                0x0000000008001e48       0x20 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x0000000008001e48                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x0000000008001e64       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x0000000008001e64                HAL_SYSTICK_Config
+                0x0000000008001e68       0x28 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x0000000008001e68                HAL_SYSTICK_Config
  .text.HAL_DAC_Init
-                0x0000000008001e8c       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
-                0x0000000008001e8c                HAL_DAC_Init
+                0x0000000008001e90       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
+                0x0000000008001e90                HAL_DAC_Init
  .text.HAL_DAC_Start
-                0x0000000008001eb0       0x62 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
-                0x0000000008001eb0                HAL_DAC_Start
+                0x0000000008001eb4       0x62 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
+                0x0000000008001eb4                HAL_DAC_Start
  .text.HAL_DAC_SetValue
-                0x0000000008001f12       0x2c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
-                0x0000000008001f12                HAL_DAC_SetValue
+                0x0000000008001f16       0x2c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
+                0x0000000008001f16                HAL_DAC_SetValue
  .text.HAL_DAC_ConfigChannel
-                0x0000000008001f3e      0x136 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
-                0x0000000008001f3e                HAL_DAC_ConfigChannel
+                0x0000000008001f42      0x136 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj
+                0x0000000008001f42                HAL_DAC_ConfigChannel
  .text.HAL_GPIO_Init
-                0x0000000008002074      0x1b8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x0000000008002074                HAL_GPIO_Init
+                0x0000000008002078      0x1b8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x0000000008002078                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x000000000800222c        0xa CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x000000000800222c                HAL_GPIO_WritePin
- *fill*         0x0000000008002236        0x2 
+                0x0000000008002230        0xa CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x0000000008002230                HAL_GPIO_WritePin
+ *fill*         0x000000000800223a        0x2 
  .text.HAL_PWR_EnableBkUpAccess
-                0x0000000008002238       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
-                0x0000000008002238                HAL_PWR_EnableBkUpAccess
+                0x000000000800223c       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj
+                0x000000000800223c                HAL_PWR_EnableBkUpAccess
  .text.HAL_PWREx_GetVoltageRange
-                0x0000000008002248       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x0000000008002248                HAL_PWREx_GetVoltageRange
+                0x000000000800224c       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x000000000800224c                HAL_PWREx_GetVoltageRange
  .text.HAL_PWREx_ControlVoltageScaling
-                0x0000000008002258       0x90 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x0000000008002258                HAL_PWREx_ControlVoltageScaling
+                0x000000000800225c       0x90 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x000000000800225c                HAL_PWREx_ControlVoltageScaling
  .text.RCC_SetFlashLatencyFromMSIRange
-                0x00000000080022e8       0x90 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x00000000080022ec       0x90 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008002378       0xb4 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0000000008002378                HAL_RCC_GetSysClockFreq
+                0x000000000800237c       0xb4 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x000000000800237c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_OscConfig
-                0x000000000800242c      0x66c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x000000000800242c                HAL_RCC_OscConfig
+                0x0000000008002430      0x66c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x0000000008002430                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x0000000008002a98      0x188 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0000000008002a98                HAL_RCC_ClockConfig
+                0x0000000008002a9c      0x188 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x0000000008002a9c                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x0000000008002c20        0xc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0000000008002c20                HAL_RCC_GetHCLKFreq
+                0x0000000008002c24        0xc CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x0000000008002c24                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0000000008002c2c       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0000000008002c2c                HAL_RCC_GetPCLK1Freq
+                0x0000000008002c30       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x0000000008002c30                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0000000008002c50       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x0000000008002c50                HAL_RCC_GetPCLK2Freq
+                0x0000000008002c54       0x24 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x0000000008002c54                HAL_RCC_GetPCLK2Freq
  .text.RCCEx_PLLSAI1_Config
-                0x0000000008002c74      0x16c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x0000000008002c78      0x16c CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008002de0      0x2e8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                0x0000000008002de0                HAL_RCCEx_PeriphCLKConfig
+                0x0000000008002de4      0x2e8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x0000000008002de4                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_RCCEx_EnableMSIPLLMode
-                0x00000000080030c8       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                0x00000000080030c8                HAL_RCCEx_EnableMSIPLLMode
+                0x00000000080030cc       0x10 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x00000000080030cc                HAL_RCCEx_EnableMSIPLLMode
  .text.UART_SetConfig
-                0x00000000080030d8      0x260 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x00000000080030d8                UART_SetConfig
+                0x00000000080030dc      0x260 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x00000000080030dc                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x0000000008003338       0xca CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x0000000008003338                UART_AdvFeatureConfig
+                0x000000000800333c       0xca CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x000000000800333c                UART_AdvFeatureConfig
  .text.UART_WaitOnFlagUntilTimeout
-                0x0000000008003402       0xd0 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x0000000008003402                UART_WaitOnFlagUntilTimeout
+                0x0000000008003406       0xd0 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x0000000008003406                UART_WaitOnFlagUntilTimeout
  .text.HAL_UART_Transmit
-                0x00000000080034d2       0xd8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x00000000080034d2                HAL_UART_Transmit
+                0x00000000080034d6       0xd8 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x00000000080034d6                HAL_UART_Transmit
  .text.UART_CheckIdleState
-                0x00000000080035aa       0x70 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x00000000080035aa                UART_CheckIdleState
+                0x00000000080035ae       0x70 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x00000000080035ae                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x000000000800361a       0x62 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x000000000800361a                HAL_UART_Init
+                0x000000000800361e       0x62 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x000000000800361e                HAL_UART_Init
  .text.__udivmoddi4
-                0x000000000800367c      0x2a0 /usr/lib/gcc/arm-none-eabi/12.1.0/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x000000000800367c                __udivmoddi4
- .text.atexit   0x000000000800391c        0xc /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-atexit.o)
-                0x000000000800391c                atexit
- .text.__errno  0x0000000008003928        0xc /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-errno.o)
-                0x0000000008003928                __errno
+                0x0000000008003680      0x2a0 /usr/lib/gcc/arm-none-eabi/12.1.0/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000008003680                __udivmoddi4
+ .text.atexit   0x0000000008003920        0xc /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-atexit.o)
+                0x0000000008003920                atexit
+ .text.__errno  0x000000000800392c        0xc /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-errno.o)
+                0x000000000800392c                __errno
  .text.__libc_fini_array
-                0x0000000008003934       0x2c /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-fini.o)
-                0x0000000008003934                __libc_fini_array
+                0x0000000008003938       0x2c /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-fini.o)
+                0x0000000008003938                __libc_fini_array
  .text.__libc_init_array
-                0x0000000008003960       0x48 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-init.o)
-                0x0000000008003960                __libc_init_array
- .text.memset   0x00000000080039a8       0xa4 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-memset.o)
-                0x00000000080039a8                memset
- .text.printf   0x0000000008003a4c       0x28 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-printf.o)
-                0x0000000008003a4c                printf
+                0x0000000008003964       0x48 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-init.o)
+                0x0000000008003964                __libc_init_array
+ .text.memset   0x00000000080039ac       0xa4 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-memset.o)
+                0x00000000080039ac                memset
+ .text.printf   0x0000000008003a50       0x28 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-printf.o)
+                0x0000000008003a50                printf
  .text._vfprintf_r
-                0x0000000008003a74     0x1a64 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-vfprintf.o)
-                0x0000000008003a74                _vfprintf_r
+                0x0000000008003a78     0x1a64 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-vfprintf.o)
+                0x0000000008003a78                _vfprintf_r
  .text.__sbprintf
-                0x00000000080054d8       0x80 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-vfprintf.o)
+                0x00000000080054dc       0x80 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x0000000008005558       0xd4 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-wsetup.o)
-                0x0000000008005558                __swsetup_r
+                0x000000000800555c       0xd4 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-wsetup.o)
+                0x000000000800555c                __swsetup_r
  .text.__register_exitproc
-                0x000000000800562c       0x84 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__atexit.o)
-                0x000000000800562c                __register_exitproc
+                0x0000000008005630       0x84 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__atexit.o)
+                0x0000000008005630                __register_exitproc
  .text.startup.register_fini
-                0x00000000080056b0       0x14 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
- .text.quorem   0x00000000080056c4      0x128 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-dtoa.o)
- *fill*         0x00000000080057ec        0x4 
+                0x00000000080056b4       0x14 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-__call_atexit.o)
+ .text.quorem   0x00000000080056c8      0x128 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-dtoa.o)
  .text._dtoa_r  0x00000000080057f0      0xe98 /usr/lib/gcc/arm-none-eabi/12.1.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg.a(lib_a-dtoa.o)
                 0x00000000080057f0                _dtoa_r
  .text.__sflush_r
