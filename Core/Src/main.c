@@ -19,7 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "commands_ELM.h"
-
+#include "throttle.h"
+#include "stdio.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -65,6 +66,11 @@ static void MX_USART1_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+int __io_putchar(int ch) {
+    uint8_t msg = ch;
+    HAL_UART_Transmit(&huart2, &msg, 1, 1000);
+    return 1;
+}
 /* USER CODE END 0 */
 
 /**
@@ -99,28 +105,35 @@ int main(void)
   MX_DAC1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-    char rx_buffer[64];
-    for(int i = 0; i < sizeof (rx_buffer);i++)
-    {
-        rx_buffer[i]=0;
-    }
+
+    car_t cc;
+    cc.throttle_dac_handler = &hdac1;
+    cc.accelerator_adc_handler = &hadc1;
+    cc.controler_engaged = 1;
+    cc.zero_accelerator_adc_offset = 0;
+    cc.max_accelerator_adc_val = 4096;
+
+    HAL_DAC_Start(&hdac1,0);
+    HAL_ADC_Start(&hadc1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  int i;
   while (1)
   {
+      i++;
     /* USER CODE END WHILE */
-      HAL_Delay(1000);
+      //car_controller_set_output_throttle(&cc,101);
+//      HAL_DAC_SetValue(&hdac1,0,0, HAL_ADC_GetValue(&hadc1));
+//      HAL_ADC_Start(&hadc1);
 
-      char command[]="AT RV\r\n";
-      HAL_GPIO_TogglePin(LD3_GPIO_Port,LD3_Pin);
-      HAL_UART_Transmit(&huart1,command, sizeof command,500);
-      HAL_UART_Receive(&huart1,rx_buffer,sizeof (rx_buffer),500);
-      HAL_UART_Transmit(&huart2,rx_buffer, sizeof (rx_buffer),100);
-      HAL_UART_Transmit(&huart2,"\r\n", 2,100);
-
-      /* USER CODE BEGIN 3 */
+      printf("Accel percent: %d \r\n", cc.accelerator_in);
+      HAL_Delay(100);
+      //car_controller_get_accelerator(&cc);
+      car_throttle_handler(&cc);
+      //car_controller_set_output_throttle(&cc); repair!!
+        /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -392,11 +405,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD3_GPIO_Port, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = GPIO_PIN_7 | GPIO_PIN_6;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 

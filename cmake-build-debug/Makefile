@@ -273,6 +273,30 @@ Core/Src/system_stm32l4xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.s
 .PHONY : Core/Src/system_stm32l4xx.c.s
 
+Core/Src/throttle.obj: Core/Src/throttle.c.obj
+.PHONY : Core/Src/throttle.obj
+
+# target to build an object file
+Core/Src/throttle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj
+.PHONY : Core/Src/throttle.c.obj
+
+Core/Src/throttle.i: Core/Src/throttle.c.i
+.PHONY : Core/Src/throttle.i
+
+# target to preprocess a source file
+Core/Src/throttle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.i
+.PHONY : Core/Src/throttle.c.i
+
+Core/Src/throttle.s: Core/Src/throttle.c.s
+.PHONY : Core/Src/throttle.s
+
+# target to generate assembly for a file
+Core/Src/throttle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.s
+.PHONY : Core/Src/throttle.c.s
+
 Core/Startup/startup_stm32l432kcux.obj: Core/Startup/startup_stm32l432kcux.s.obj
 .PHONY : Core/Startup/startup_stm32l432kcux.obj
 
@@ -860,6 +884,9 @@ help:
 	@echo "... Core/Src/system_stm32l4xx.obj"
 	@echo "... Core/Src/system_stm32l4xx.i"
 	@echo "... Core/Src/system_stm32l4xx.s"
+	@echo "... Core/Src/throttle.obj"
+	@echo "... Core/Src/throttle.i"
+	@echo "... Core/Src/throttle.s"
 	@echo "... Core/Startup/startup_stm32l432kcux.obj"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.obj"
 	@echo "... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.i"

@@ -108,6 +108,9 @@
 		<Unit filename="/home/michal/CruiseControl/Core/Inc/stm32l4xx_it.h">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/throttle.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Src/main.c">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
@@ -124,6 +127,9 @@
 			<Option target="CruiseControl.elf"/>
 		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Src/system_stm32l4xx.c">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/throttle.c">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Startup/startup_stm32l432kcux.s">

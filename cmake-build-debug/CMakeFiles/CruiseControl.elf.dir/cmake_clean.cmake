@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj.d"
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj"
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj.d"
+  "CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj"
+  "CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj.d"
   "CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj"
   "CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj"
   "CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj.d"
