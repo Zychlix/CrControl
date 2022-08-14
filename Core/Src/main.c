@@ -110,8 +110,10 @@ int main(void)
     cc.throttle_dac_handler = &hdac1;
     cc.accelerator_adc_handler = &hadc1;
     cc.controler_engaged = 1;
-    cc.zero_accelerator_adc_offset = 0;
-    cc.max_accelerator_adc_val = 4096;
+    cc.zero_accelerator_adc_offset = 200;
+    cc.max_accelerator_adc_val = 2500;
+    cc.ecu_en_pin = PEDAL_EN_Pin;
+    cc.ecu_en_port = PEDAL_EN_Port;
 
     HAL_DAC_Start(&hdac1,0);
     HAL_ADC_Start(&hadc1);
@@ -123,16 +125,18 @@ int main(void)
   while (1)
   {
       i++;
-    /* USER CODE END WHILE */
-      //car_controller_set_output_throttle(&cc,101);
-//      HAL_DAC_SetValue(&hdac1,0,0, HAL_ADC_GetValue(&hadc1));
-//      HAL_ADC_Start(&hadc1);
 
-      printf("Accel percent: %d \r\n", cc.accelerator_in);
+      printf("Accel percent: %d \r\n", cc.accelerator_raw_in);
+
       HAL_Delay(100);
       //car_controller_get_accelerator(&cc);
       car_throttle_handler(&cc);
+      //HAL_GPIO_WritePin(PEDAL_EN_Port,PEDAL_EN_Pin,1);
+
       //car_controller_set_output_throttle(&cc); repair!!
+    /* USER CODE END WHILE */
+
+
         /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -405,6 +409,11 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD3_GPIO_Port, &GPIO_InitStruct);
 
+    GPIO_InitStruct.Pin = PEDAL_EN_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(PEDAL_EN_Port, &GPIO_InitStruct);
 
 }
 

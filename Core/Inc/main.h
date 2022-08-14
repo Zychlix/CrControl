@@ -74,6 +74,8 @@ void Error_Handler(void);
 #define LD3_Pin GPIO_PIN_3
 #define LD3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
+#define PEDAL_EN_Pin    GPIO_PIN_5
+#define PEDAL_EN_Port   GPIOB
 
 /* USER CODE END Private defines */
 

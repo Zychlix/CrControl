@@ -18,8 +18,11 @@ typedef struct car
     uint16_t zero_accelerator_adc_offset;
     uint16_t max_accelerator_adc_val;
 
-    uint16_t throttle_out;
-    uint16_t accelerator_in;
+    uint16_t throttle_raw_out;
+    uint16_t accelerator_raw_in;
+
+    uint16_t * ecu_en_port;
+    uint16_t ecu_en_pin;
 
 } car_t;
 void car_controller_init();
@@ -31,3 +34,5 @@ void car_controller_set_output_throttle(car_t *instance, uint16_t value);
 void car_controller_get_accelerator(car_t * instance);
 
 void car_throttle_handler(car_t * instance);
+
+void car_scale_values(car_t * instance);
