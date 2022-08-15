@@ -69,10 +69,24 @@ include CMakeFiles/CruiseControl.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CruiseControl.elf.dir/flags.make
 
+CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
+CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj: ../Core/Src/elm327.c
+CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj -c /home/michal/CruiseControl/Core/Src/elm327.c
+
+CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michal/CruiseControl/Core/Src/elm327.c > CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.i
+
+CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michal/CruiseControl/Core/Src/elm327.c -o CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.s
+
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj -c /home/michal/CruiseControl/Core/Src/main.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj: ../Core/Src/stm32l4xx_hal_msp.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj -c /home/michal/CruiseControl/Core/Src/stm32l4xx_hal_msp.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj: ../Core/Src/stm32l4xx_it.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj -c /home/michal/CruiseControl/Core/Src/stm32l4xx_it.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.obj -c /home/michal/CruiseControl/Core/Src/syscalls.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj: ../Core/Src/sysmem.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.obj -c /home/michal/CruiseControl/Core/Src/sysmem.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj: ../Core/Src/system_stm32l4xx.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.obj -c /home/michal/CruiseControl/Core/Src/system_stm32l4xx.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/system_stm32l4xx.c.s: cmake_force
 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj: ../Core/Src/throttle.c
 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj -c /home/michal/CruiseControl/Core/Src/throttle.c
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.s: cmake_force
 
 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj: ../Core/Startup/startup_stm32l432kcux.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.obj -c /home/michal/CruiseControl/Core/Startup/startup_stm32l432kcux.s
 
 CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/CruiseControl.elf.dir/Core/Startup/startup_stm32l432kcux.s.s: cmake_f
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c.i: cmake_force
@@ -267,7 +281,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.i: cmake_force
@@ -281,7 +295,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.i: cmake_force
@@ -295,7 +309,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.i: cmake_force
@@ -309,7 +323,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.i: cmake_force
@@ -323,7 +337,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.i: cmake_force
@@ -337,7 +351,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -351,7 +365,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.i: cmake_force
@@ -365,7 +379,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.i: cmake_force
@@ -379,7 +393,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.i: cmake_force
@@ -393,7 +407,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.i: cmake_force
@@ -407,7 +421,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.i: cmake_force
@@ -421,7 +435,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.i: cmake_force
@@ -435,7 +449,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.i: cmake_force
@@ -449,7 +463,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.i: cmake_force
@@ -463,7 +477,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.i: cmake_force
@@ -477,7 +491,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.i: cmake_force
@@ -491,7 +505,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/flags.make
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: CMakeFiles/CruiseControl.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj -MF CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj.d -o CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj -c /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.i: cmake_force
@@ -504,6 +518,7 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 # Object files for target CruiseControl.elf
 CruiseControl_elf_OBJECTS = \
+"CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj" \
 "CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj" \
 "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj" \
@@ -539,6 +554,7 @@ CruiseControl_elf_OBJECTS = \
 # External object files for target CruiseControl.elf
 CruiseControl_elf_EXTERNAL_OBJECTS =
 
+CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj
@@ -572,7 +588,7 @@ CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/build.make
 CruiseControl.elf: CMakeFiles/CruiseControl.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking C executable CruiseControl.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/CruiseControl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable CruiseControl.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CruiseControl.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/michal/CruiseControl/cmake-build-debug/CruiseControl.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/michal/CruiseControl/cmake-build-debug/CruiseControl.bin"

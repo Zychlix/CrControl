@@ -99,7 +99,13 @@
 		<Unit filename="/home/michal/CruiseControl/Core/Inc/commands_ELM.h">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/elm327.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Inc/main.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Inc/misc.h">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Inc/stm32l4xx_hal_conf.h">
@@ -109,6 +115,9 @@
 			<Option target="CruiseControl.elf"/>
 		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Inc/throttle.h">
+			<Option target="CruiseControl.elf"/>
+		</Unit>
+		<Unit filename="/home/michal/CruiseControl/Core/Src/elm327.c">
 			<Option target="CruiseControl.elf"/>
 		</Unit>
 		<Unit filename="/home/michal/CruiseControl/Core/Src/main.c">

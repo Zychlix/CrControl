@@ -30,6 +30,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/michal/CruiseControl/Core/Src/elm327.c" "CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj" "gcc" "CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj.d"
   "/home/michal/CruiseControl/Core/Src/main.c" "CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj.d"
   "/home/michal/CruiseControl/Core/Src/stm32l4xx_hal_msp.c" "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj" "gcc" "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj.d"
   "/home/michal/CruiseControl/Core/Src/stm32l4xx_it.c" "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj" "gcc" "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj.d"

@@ -129,6 +129,30 @@ CruiseControl.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/build
 .PHONY : CruiseControl.elf/fast
 
+Core/Src/elm327.obj: Core/Src/elm327.c.obj
+.PHONY : Core/Src/elm327.obj
+
+# target to build an object file
+Core/Src/elm327.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj
+.PHONY : Core/Src/elm327.c.obj
+
+Core/Src/elm327.i: Core/Src/elm327.c.i
+.PHONY : Core/Src/elm327.i
+
+# target to preprocess a source file
+Core/Src/elm327.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.i
+.PHONY : Core/Src/elm327.c.i
+
+Core/Src/elm327.s: Core/Src/elm327.c.s
+.PHONY : Core/Src/elm327.s
+
+# target to generate assembly for a file
+Core/Src/elm327.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CruiseControl.elf.dir/build.make CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.s
+.PHONY : Core/Src/elm327.c.s
+
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -866,6 +890,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CruiseControl.elf"
+	@echo "... Core/Src/elm327.obj"
+	@echo "... Core/Src/elm327.i"
+	@echo "... Core/Src/elm327.s"
 	@echo "... Core/Src/main.obj"
 	@echo "... Core/Src/main.i"
 	@echo "... Core/Src/main.s"

@@ -67,4 +67,5 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj: \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/sys/sched.h \
  /usr/arm-none-eabi/include/machine/types.h \
- /usr/arm-none-eabi/include/sys/stdio.h
+ /usr/arm-none-eabi/include/sys/stdio.h \
+ /home/michal/CruiseControl/Core/Inc/elm327.h

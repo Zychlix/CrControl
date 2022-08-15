@@ -21,6 +21,7 @@
 #include "commands_ELM.h"
 #include "throttle.h"
 #include "stdio.h"
+#include "elm327.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -41,15 +42,16 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-ADC_HandleTypeDef hadc1;
+volatile ADC_HandleTypeDef hadc1;
 
-DAC_HandleTypeDef hdac1;
+volatile DAC_HandleTypeDef hdac1;
 
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+volatile car_t car_controller;
+volatile elm_t dongle;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -59,6 +61,7 @@ static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_DAC1_Init(void);
 static void MX_USART1_UART_Init(void);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -70,6 +73,25 @@ int __io_putchar(int ch) {
     uint8_t msg = ch;
     HAL_UART_Transmit(&huart2, &msg, 1, 1000);
     return 1;
+}
+
+void timer_configuire()
+{
+
+    __HAL_RCC_TIM2_CLK_ENABLE();
+
+    HAL_NVIC_SetPriority(TIM2_IRQn,0,0);
+    HAL_NVIC_EnableIRQ(TIM2_IRQn);
+
+
+    TIM_TypeDef * timer = TIM2;
+    timer->EGR = TIM_EGR_UG;
+    timer->PSC = 64-1;
+    timer->ARR = 5000;
+    timer->CR1 = TIM_CR1_ARPE | TIM_CR1_CEN;
+    TIM2->DIER =  TIM_DIER_UIE; //generate interrupts
+
+
 }
 /* USER CODE END 0 */
 
@@ -104,34 +126,52 @@ int main(void)
   MX_ADC1_Init();
   MX_DAC1_Init();
   MX_USART1_UART_Init();
+
   /* USER CODE BEGIN 2 */
 
-    car_t cc;
-    cc.throttle_dac_handler = &hdac1;
-    cc.accelerator_adc_handler = &hadc1;
-    cc.controler_engaged = 1;
-    cc.ecu_en_pin = PEDAL_EN_Pin;
-    cc.ecu_en_port = PEDAL_EN_Port;
+    
+    car_controller.throttle_dac_handler = &hdac1;
+    car_controller.accelerator_adc_handler = &hadc1;
+    car_controller.controler_engaged = 1;
+    car_controller.ecu_en_pin = PEDAL_EN_Pin;
+    car_controller.ecu_en_port = PEDAL_EN_Port;
 
     HAL_DAC_Start(&hdac1,0);
     HAL_ADC_Start(&hadc1);
+
+    timer_configuire();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int i;
+    car_throttle_handler(&car_controller);
+
+    dongle.huart = &huart1;
+    elm_connect(&dongle);
+    char rec_buf[32];
+    for(int i = 0; i<32; i++)
+    {
+        rec_buf[i]=0;
+    }
+    rec_buf[31] = '\n';
   while (1)
   {
-      i++;
 
-      printf("Accel percent: %f \r\n", cc.accelerator_percent);
 
-      HAL_Delay(100);
+      char command[] = "010C";
+      HAL_UART_Transmit(&huart1,command, sizeof command,100 );
+      HAL_UART_Receive(&huart1, rec_buf, 20, 500);
+      printf("Received: %s \r\n", rec_buf);
+      for(int i = 0; i< 20;i++)
+      {
+          printf("%d ",rec_buf[i]);
+      }
+
+      HAL_Delay(1);
+
       //car_controller_update_accelerator_raw_input(&cc);
-      car_throttle_handler(&cc);
-      //HAL_GPIO_WritePin(PEDAL_EN_Port,PEDAL_EN_Pin,1);
+      //car_throttle_handler(&car_controller);
 
-      //car_controller_set_output_throttle(&cc); repair!!
     /* USER CODE END WHILE */
 
 
@@ -416,7 +456,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void TIM2_IRQHandler(void)  //main refresh loop
+{
+    //HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_3);
+    car_throttle_handler(&car_controller);
+    
+    TIM2->SR = ~TIM_SR_UIF;
+}
 /* USER CODE END 4 */
 
 /**

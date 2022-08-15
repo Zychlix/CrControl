@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj"
+  "CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj.d"
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj.d"
   "CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj"

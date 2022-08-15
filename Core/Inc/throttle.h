@@ -15,6 +15,9 @@
 
 #define DAC_ZERO_OFFSET 0//0.25V
 #define DAC_MAX_VALUE 4095
+
+#define PEDAL_EN_TRSH 6
+
 typedef struct car
 {
     uint8_t passthrough_engaged;
@@ -36,7 +39,7 @@ typedef struct car
 } car_t;
 void car_controller_init();
 
-void car_controller_flush_throttle(car_t * instance);
+void car_controller_execute_throttle(car_t * instance);
 
 void car_controller_set_output_throttle(car_t *instance, uint16_t value);
 
