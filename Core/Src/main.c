@@ -165,9 +165,10 @@ int main(void)
       HAL_UART_Receive(&huart1, rec_buf, sizeof (rec_buf), 500);
 
       printf("Received: %s \r\n", rec_buf);
-      for(int i = 0; i< 20;i++)
+      for(int i = 0; i< 32;i++)
       {
-          printf("%d ",rec_buf[i]);
+          HAL_UART_Transmit(&huart2,&rec_buf[i],1,100);
+          HAL_UART_Transmit(&huart2,"\r\n",2,100);
       }
 
       for(int i = 0; i<32; i++)
@@ -175,7 +176,7 @@ int main(void)
           rec_buf[i]=0;
       }
 
-      HAL_Delay(10);
+      HAL_Delay(500);
 
       //car_controller_update_accelerator_raw_input(&cc);
       //car_throttle_handler(&car_controller);
