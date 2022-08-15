@@ -14,10 +14,16 @@ typedef struct elm
     UART_HandleTypeDef * huart;
     UART_HandleTypeDef * debug_huart;
 
+    volatile char * rec_buf;
+
     int8_t status;
 } elm_t;
 
 int8_t elm_connect(elm_t * device);
+
+void elm_send_query(elm_t *device ,char * command, uint16_t size_command, uint16_t size_data);
+
+uint8_t elm_parse_speed(elm_t *device);
 
 int8_t elm_send_command(elm_t * device);
 uint8_t elm_read_velocity(elm_t * device);

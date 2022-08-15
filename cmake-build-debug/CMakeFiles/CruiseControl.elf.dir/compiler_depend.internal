@@ -46,6 +46,19 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+ /usr/arm-none-eabi/include/stdlib.h
+ /usr/arm-none-eabi/include/machine/ieeefp.h
+ /usr/arm-none-eabi/include/_ansi.h
+ /usr/arm-none-eabi/include/newlib.h
+ /usr/arm-none-eabi/include/sys/config.h
+ /usr/arm-none-eabi/include/sys/reent.h
+ /usr/arm-none-eabi/include/_ansi.h
+ /usr/arm-none-eabi/include/sys/_types.h
+ /usr/arm-none-eabi/include/machine/_types.h
+ /usr/arm-none-eabi/include/sys/lock.h
+ /usr/arm-none-eabi/include/sys/cdefs.h
+ /usr/arm-none-eabi/include/machine/stdlib.h
+ /usr/arm-none-eabi/include/alloca.h
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj
  /home/michal/CruiseControl/Core/Src/main.c

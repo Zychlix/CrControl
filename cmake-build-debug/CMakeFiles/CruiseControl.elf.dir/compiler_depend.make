@@ -44,7 +44,20 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/elm327.c.obj: ../Core/Src/elm327.c \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
-  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
+  /usr/arm-none-eabi/include/stdlib.h \
+  /usr/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/newlib.h \
+  /usr/arm-none-eabi/include/sys/config.h \
+  /usr/arm-none-eabi/include/sys/reent.h \
+  /usr/arm-none-eabi/include/_ansi.h \
+  /usr/arm-none-eabi/include/sys/_types.h \
+  /usr/arm-none-eabi/include/machine/_types.h \
+  /usr/arm-none-eabi/include/sys/lock.h \
+  /usr/arm-none-eabi/include/sys/cdefs.h \
+  /usr/arm-none-eabi/include/machine/stdlib.h \
+  /usr/arm-none-eabi/include/alloca.h
 
 CMakeFiles/CruiseControl.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c \
   ../Core/Inc/main.h \
@@ -1378,16 +1391,6 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c:
 
-../Core/Inc/main.h:
-
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h:
-
-../Core/Src/main.c:
-
-../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c:
-
-/usr/lib/gcc/arm-none-eabi/12.1.0/include/stdarg.h:
-
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c:
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
@@ -1424,11 +1427,11 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h:
 
+/usr/arm-none-eabi/include/sys/reent.h:
+
 /usr/lib/gcc/arm-none-eabi/12.1.0/include/stddef.h:
 
 /usr/lib/gcc/arm-none-eabi/12.1.0/include/stdbool.h:
-
-/usr/arm-none-eabi/include/sys/reent.h:
 
 /usr/arm-none-eabi/include/alloca.h:
 
@@ -1478,6 +1481,10 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
 
+/usr/arm-none-eabi/include/machine/_default_types.h:
+
+/usr/arm-none-eabi/include/stdlib.h:
+
 ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h:
 
 /usr/arm-none-eabi/include/sys/signal.h:
@@ -1490,23 +1497,27 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 /usr/arm-none-eabi/include/machine/_time.h:
 
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h:
+
+../Core/Inc/main.h:
+
 ../Core/Inc/commands_ELM.h:
 
 ../Core/Inc/stm32l4xx_hal_conf.h:
+
+../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c:
+
+/usr/arm-none-eabi/include/machine/ieeefp.h:
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:
 
-/usr/arm-none-eabi/include/stdio.h:
+/usr/arm-none-eabi/include/sys/_types.h:
 
-../Drivers/CMSIS/Include/core_cm4.h:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h:
 
-/usr/arm-none-eabi/include/sys/_locale.h:
-
-../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c:
-
-/usr/arm-none-eabi/include/machine/ieeefp.h:
+/usr/arm-none-eabi/include/machine/_types.h:
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
 
@@ -1518,11 +1529,23 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 ../Core/Inc/misc.h:
 
-/usr/arm-none-eabi/include/sys/_types.h:
+/usr/arm-none-eabi/include/sys/config.h:
 
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h:
+/usr/arm-none-eabi/include/machine/stdlib.h:
 
-/usr/arm-none-eabi/include/machine/_types.h:
+../Core/Src/stm32l4xx_hal_msp.c:
+
+../Core/Src/main.c:
+
+../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c:
+
+/usr/lib/gcc/arm-none-eabi/12.1.0/include/stdarg.h:
+
+/usr/arm-none-eabi/include/stdio.h:
+
+../Drivers/CMSIS/Include/core_cm4.h:
+
+/usr/arm-none-eabi/include/sys/_locale.h:
 
 /usr/arm-none-eabi/include/_ansi.h:
 
@@ -1550,12 +1573,6 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 /usr/arm-none-eabi/include/sys/stdio.h:
 
-../Core/Src/stm32l4xx_hal_msp.c:
-
-/usr/arm-none-eabi/include/sys/config.h:
-
-/usr/arm-none-eabi/include/machine/stdlib.h:
-
 ../Core/Inc/stm32l4xx_it.h:
 
 /usr/arm-none-eabi/include/sys/_timespec.h:
@@ -1565,10 +1582,6 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 /usr/arm-none-eabi/include/sys/stat.h:
 
 /usr/arm-none-eabi/include/machine/time.h:
-
-/usr/arm-none-eabi/include/machine/_default_types.h:
-
-/usr/arm-none-eabi/include/stdlib.h:
 
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c:
 

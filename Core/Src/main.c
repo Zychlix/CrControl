@@ -52,6 +52,8 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 volatile car_t car_controller;
 volatile elm_t dongle;
+
+volatile char receive_buffer[64];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -148,40 +150,43 @@ int main(void)
 
     dongle.huart = &huart1;
     elm_connect(&dongle);
-    HAL_Delay(1000);
-    char rec_buf[32];
-    for(int i = 0; i<32; i++)
+    HAL_Delay(2000);
+dongle.rec_buf = receive_buffer;
+    for(int i = 0; i<64; i++)
     {
-        rec_buf[i]=0;
+        dongle.rec_buf[i]=0;
     }
-    rec_buf[31] = '\n';
+    dongle.rec_buf[63] = '\n';
+
   while (1)
   {
 
 
-      char command[] = "01 0C\r";
-      HAL_UART_Transmit(&huart1,command, sizeof command,100 );
+      char command[] = "01 0D\r";
 
-      HAL_UART_Receive(&huart1, rec_buf, sizeof (rec_buf), 500);
 
-      printf("Received: %s \r\n", rec_buf);
-      for(int i = 0; i< 32;i++)
+
+      elm_send_query(&dongle,command,sizeof command,15);
+
+
+
+      for(int i = 0; i<64; i++)
       {
-          HAL_UART_Transmit(&huart2,&rec_buf[i],1,100);
-          HAL_UART_Transmit(&huart2,"\r\n",2,100);
+          if(dongle.rec_buf[i]==0 || dongle.rec_buf[i]=='\r')
+          {
+              dongle.rec_buf[i] = ' ';
+          }
       }
+      HAL_Delay(3000);
 
-      for(int i = 0; i<32; i++)
-      {
-          rec_buf[i]=0;
-      }
 
-      HAL_Delay(500);
+      printf("Received: %s \r\n", dongle.rec_buf);
+      printf("\r\n Speed: %d", elm_parse_speed(&dongle));
 
-      //car_controller_update_accelerator_raw_input(&cc);
-      //car_throttle_handler(&car_controller);
 
-    /* USER CODE END WHILE */
+
+
+      /* USER CODE END WHILE */
 
 
         /* USER CODE BEGIN 3 */
@@ -359,7 +364,8 @@ static void MX_USART1_UART_Init(void)
 {
 
   /* USER CODE BEGIN USART1_Init 0 */
-
+    HAL_NVIC_SetPriority(USART1_IRQn, 2, 2);
+    HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE END USART1_Init 0 */
 
   /* USER CODE BEGIN USART1_Init 1 */
@@ -471,6 +477,15 @@ void TIM2_IRQHandler(void)  //main refresh loop
     car_throttle_handler(&car_controller);
     
     TIM2->SR = ~TIM_SR_UIF;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+    HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,1);
+
+ //   for(int i = 0; i<64; i++)
+//      {
+//          rec_buf[i]=' ';
+//      }
 }
 /* USER CODE END 4 */
 
