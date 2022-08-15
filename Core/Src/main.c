@@ -110,8 +110,6 @@ int main(void)
     cc.throttle_dac_handler = &hdac1;
     cc.accelerator_adc_handler = &hadc1;
     cc.controler_engaged = 1;
-    cc.zero_accelerator_adc_offset = 200;
-    cc.max_accelerator_adc_val = 2500;
     cc.ecu_en_pin = PEDAL_EN_Pin;
     cc.ecu_en_port = PEDAL_EN_Port;
 
@@ -126,10 +124,10 @@ int main(void)
   {
       i++;
 
-      printf("Accel percent: %d \r\n", cc.accelerator_raw_in);
+      printf("Accel percent: %f \r\n", cc.accelerator_percent);
 
       HAL_Delay(100);
-      //car_controller_get_accelerator(&cc);
+      //car_controller_update_accelerator_raw_input(&cc);
       car_throttle_handler(&cc);
       //HAL_GPIO_WritePin(PEDAL_EN_Port,PEDAL_EN_Pin,1);
 

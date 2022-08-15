@@ -1,4 +1,5 @@
 #include <throttle.h>
+#include "misc.h"
 
 void car_controller_set_output_throttle(car_t* instance, uint16_t value )
 {
@@ -23,7 +24,7 @@ void car_controller_set_output_throttle(car_t* instance, uint16_t value )
     return;
 }
 
-void car_controller_get_accelerator(car_t * instance)
+void car_controller_update_accelerator_raw_input(car_t * instance)
 {
     uint16_t value;
     uint16_t adc_val;
@@ -37,8 +38,10 @@ void car_controller_get_accelerator(car_t * instance)
 
 void car_throttle_handler(car_t * instance)
 {
-    car_controller_get_accelerator(instance);
-    instance->throttle_raw_out = instance->accelerator_raw_in;
+    car_controller_update_accelerator_raw_input(instance);
+    car_calculate_accelerator_scaled_value(instance);
+    instance->throttle_percent = instance->accelerator_percent;
+    car_set_throttle_percent(instance);
     //car_controller_set_output_throttle(instance,instance->accelerator_raw_in);
     car_controller_flush_throttle(instance);
 
@@ -59,4 +62,20 @@ void car_controller_flush_throttle(car_t * instance)
 
     }
 
+}
+
+void car_calculate_accelerator_scaled_value(car_t * instance)
+{
+    int16_t value = instance->accelerator_raw_in ;
+    value = 100 * ((float)value - ADC_ZERO_READING) / (ADC_MAX_READING - ADC_ZERO_READING);
+    value = float_constraint(value,0,100);
+    instance->accelerator_percent = value;
+    return;
+}
+
+void car_set_throttle_percent(car_t * instance)
+{
+    int16_t throttle = DAC_ZERO_OFFSET + instance->throttle_percent*(DAC_MAX_VALUE-DAC_ZERO_OFFSET)/100;
+    throttle = int_constraint(throttle,0,CAR_MAX_DAC_VAL);
+    instance->throttle_raw_out = throttle;
 }

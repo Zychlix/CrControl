@@ -315,7 +315,8 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/throttle.c.obj: ../Core/Src/throttle.c
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
-  /usr/lib/gcc/arm-none-eabi/12.1.0/include/stdbool.h
+  /usr/lib/gcc/arm-none-eabi/12.1.0/include/stdbool.h \
+  ../Core/Inc/misc.h
 
 CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c \
   ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
@@ -1325,6 +1326,8 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c:
 
+../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c:
+
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c:
 
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
@@ -1383,8 +1386,6 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 /usr/arm-none-eabi/include/machine/_endian.h:
 
-../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c:
-
 ../Core/Src/main.c:
 
 ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c:
@@ -1431,12 +1432,6 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 
 /usr/arm-none-eabi/include/machine/_time.h:
 
-../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c:
-
-/usr/arm-none-eabi/include/sys/errno.h:
-
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h:
-
 ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:
 
 /usr/arm-none-eabi/include/sys/_timeval.h:
@@ -1460,6 +1455,14 @@ CMakeFiles/CruiseControl.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_
 /usr/arm-none-eabi/include/machine/ieeefp.h:
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
+
+../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c:
+
+/usr/arm-none-eabi/include/sys/errno.h:
+
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h:
+
+../Core/Inc/misc.h:
 
 /usr/arm-none-eabi/include/sys/_types.h:
 
