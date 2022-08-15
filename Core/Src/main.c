@@ -149,8 +149,9 @@ int main(void)
     car_throttle_handler(&car_controller);
 
     dongle.huart = &huart1;
-    elm_connect(&dongle);
     HAL_Delay(2000);
+    elm_connect(&dongle);
+
 dongle.rec_buf = receive_buffer;
     for(int i = 0; i<64; i++)
     {
@@ -162,13 +163,16 @@ dongle.rec_buf = receive_buffer;
   {
 
 
-      char command[] = "01 0D\r";
+      char command[] = "010D\r";
+      elm_send_query(&dongle,command,sizeof command,8);
 
 
 
-      elm_send_query(&dongle,command,sizeof command,15);
 
 
+
+
+      HAL_Delay(1000);
 
       for(int i = 0; i<64; i++)
       {
@@ -177,12 +181,11 @@ dongle.rec_buf = receive_buffer;
               dongle.rec_buf[i] = ' ';
           }
       }
-      HAL_Delay(3000);
-
 
       printf("Received: %s \r\n", dongle.rec_buf);
-      printf("\r\n Speed: %d", elm_parse_speed(&dongle));
-
+      if(dongle.valid_reading) {
+          printf("\r\n Speed: %d \r\n", dongle.current_speed);
+      }
 
 
 
@@ -481,10 +484,11 @@ void TIM2_IRQHandler(void)  //main refresh loop
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
     HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,1);
-
- //   for(int i = 0; i<64; i++)
+    elm_parse_speed(&dongle);
+//   for(int i = 0; i<64; i++)
 //      {
-//          rec_buf[i]=' ';
+//
+//       receive_buffer[i]=' ';
 //      }
 }
 /* USER CODE END 4 */

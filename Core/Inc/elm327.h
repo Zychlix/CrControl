@@ -14,6 +14,10 @@ typedef struct elm
     UART_HandleTypeDef * huart;
     UART_HandleTypeDef * debug_huart;
 
+    uint8_t valid_reading;
+
+    uint8_t current_speed;
+
     volatile char * rec_buf;
 
     int8_t status;
