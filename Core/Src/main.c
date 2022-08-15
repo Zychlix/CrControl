@@ -148,6 +148,7 @@ int main(void)
 
     dongle.huart = &huart1;
     elm_connect(&dongle);
+    HAL_Delay(1000);
     char rec_buf[32];
     for(int i = 0; i<32; i++)
     {
@@ -158,16 +159,23 @@ int main(void)
   {
 
 
-      char command[] = "010C";
+      char command[] = "01 0C\r";
       HAL_UART_Transmit(&huart1,command, sizeof command,100 );
-      HAL_UART_Receive(&huart1, rec_buf, 20, 500);
+
+      HAL_UART_Receive(&huart1, rec_buf, sizeof (rec_buf), 500);
+
       printf("Received: %s \r\n", rec_buf);
       for(int i = 0; i< 20;i++)
       {
           printf("%d ",rec_buf[i]);
       }
 
-      HAL_Delay(1);
+      for(int i = 0; i<32; i++)
+      {
+          rec_buf[i]=0;
+      }
+
+      HAL_Delay(10);
 
       //car_controller_update_accelerator_raw_input(&cc);
       //car_throttle_handler(&car_controller);
