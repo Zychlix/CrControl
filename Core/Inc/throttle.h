@@ -18,8 +18,15 @@
 
 #define PEDAL_EN_TRSH 6
 
+typedef enum car_state
+{
+    CAR_STATUS_DIRECT,
+    CAR_STATUS_CONTROLLED,
+} car_state_t;
+
 typedef struct car
 {
+    car_state_t state;
     uint8_t passthrough_engaged;
     uint8_t controler_engaged;
     DAC_HandleTypeDef * throttle_dac_handler;
@@ -30,6 +37,7 @@ typedef struct car
     uint16_t accelerator_raw_in;
 
     float accelerator_percent; // 0-100
+    float saved_throttle_value;
     float throttle_percent;
 
 

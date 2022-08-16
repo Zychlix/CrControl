@@ -137,6 +137,7 @@ int main(void)
     car_controller.controler_engaged = 1;
     car_controller.ecu_en_pin = PEDAL_EN_Pin;
     car_controller.ecu_en_port = PEDAL_EN_Port;
+    car_controller.state = CAR_STATUS_DIRECT;
 
     HAL_DAC_Start(&hdac1,0);
     HAL_ADC_Start(&hadc1);
@@ -449,13 +450,13 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : ENABLE_Pin */
   GPIO_InitStruct.Pin = ENABLE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(ENABLE_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : DISABLE_Pin */
   GPIO_InitStruct.Pin = DISABLE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(DISABLE_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LD3_Pin */
@@ -470,6 +471,9 @@ static void MX_GPIO_Init(void)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(PEDAL_EN_Port, &GPIO_InitStruct);
+
+    HAL_NVIC_SetPriority(EXTI9_5_IRQn,0,0);
+    HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 
@@ -491,6 +495,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 //       receive_buffer[i]=' ';
 //      }
 }
+
 /* USER CODE END 4 */
 
 /**

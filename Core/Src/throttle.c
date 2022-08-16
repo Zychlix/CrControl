@@ -41,7 +41,14 @@ void car_throttle_handler(car_t * instance)
      //get current pedal throttle
     car_controller_update_accelerator_raw_input(instance);
     car_calculate_accelerator_scaled_value(instance);       //calculate accelerator percent
-    instance->throttle_percent = instance->accelerator_percent; //set throttle value
+    if(instance->state == CAR_STATUS_DIRECT)
+    {
+        instance->throttle_percent = instance->accelerator_percent; //set throttle value
+    } else
+    {
+
+    }
+
     car_set_throttle_percent(instance);                         //turn throttle percent into dac value
     //car_controller_set_output_throttle(instance,instance->accelerator_raw_in);
     car_controller_execute_throttle(instance);                  //Set car throttle to set values
