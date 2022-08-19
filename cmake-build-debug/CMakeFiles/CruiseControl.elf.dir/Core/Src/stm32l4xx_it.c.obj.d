@@ -42,4 +42,6 @@ CMakeFiles/CruiseControl.elf.dir/Core/Src/stm32l4xx_it.c.obj: \
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  /home/michal/CruiseControl/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- /home/michal/CruiseControl/Core/Inc/stm32l4xx_it.h
+ /home/michal/CruiseControl/Core/Inc/stm32l4xx_it.h \
+ /home/michal/CruiseControl/Core/Inc/throttle.h \
+ /usr/lib/gcc/arm-none-eabi/12.1.0/include/stdbool.h

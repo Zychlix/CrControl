@@ -21,9 +21,10 @@ void car_throttle_handler(car_t * instance)
     if(instance->state == CAR_STATUS_DIRECT)
     {
         instance->throttle_percent = instance->accelerator_percent; //set throttle value
-    } else
+    }
+    if(instance->state == CAR_STATUS_CONTROLLED)
     {
-
+        instance->throttle_percent = instance->saved_throttle_value;
     }
 
     car_set_throttle_percent(instance);                         //turn throttle percent into dac value
@@ -67,6 +68,7 @@ void car_set_throttle_percent(car_t * instance)
 
 void car_controller_enable_automatic_control(car_t * instance)
 {
+    instance->saved_throttle_value = instance->accelerator_percent;
     instance->state = CAR_STATUS_CONTROLLED;
 }
 

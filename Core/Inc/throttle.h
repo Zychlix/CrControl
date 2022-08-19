@@ -36,6 +36,7 @@ typedef struct car
     uint16_t accelerator_raw_in;
 
     float accelerator_percent; // 0-100
+    float saved_throttle_value;
     float throttle_percent;
 
 

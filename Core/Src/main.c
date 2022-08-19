@@ -50,7 +50,7 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-volatile car_t car_controller;
+volatile car_t car_controler;
 volatile elm_t dongle;
 
 volatile char receive_buffer[64];
@@ -132,12 +132,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
     
-    car_controller.throttle_dac_handler = &hdac1;
-    car_controller.accelerator_adc_handler = &hadc1;
-    car_controller.controler_engaged = 1;
-    car_controller.ecu_en_pin = PEDAL_EN_Pin;
-    car_controller.ecu_en_port = PEDAL_EN_Port;
-    car_controller.state = CAR_STATUS_DIRECT;
+    car_controler.throttle_dac_handler = &hdac1;
+    car_controler.accelerator_adc_handler = &hadc1;
+    car_controler.controler_engaged = 1;
+    car_controler.ecu_en_pin = PEDAL_EN_Pin;
+    car_controler.ecu_en_port = PEDAL_EN_Port;
+    car_controler.state = CAR_STATUS_DIRECT;
 
     HAL_DAC_Start(&hdac1,0);
     HAL_ADC_Start(&hadc1);
@@ -147,7 +147,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    car_throttle_handler(&car_controller);
+    car_throttle_handler(&car_controler);
 
     dongle.huart = &huart1;
     HAL_Delay(2000);
@@ -469,7 +469,7 @@ static void MX_GPIO_Init(void)
 void TIM2_IRQHandler(void)  //main refresh loop
 {
     //HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_3);
-    car_throttle_handler(&car_controller);
+    car_throttle_handler(&car_controler);
     
     TIM2->SR = ~TIM_SR_UIF;
 }

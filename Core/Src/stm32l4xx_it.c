@@ -20,8 +20,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32l4xx_it.h"
+#include "throttle.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+extern volatile car_controler;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -218,14 +220,16 @@ void EXTI9_5_IRQHandler()
     if(__HAL_GPIO_EXTI_GET_FLAG(GPIO_PIN_5))
     {
         HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,1);
+        car_controller_enable_automatic_control(&car_controler);
+        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
     }
     if(__HAL_GPIO_EXTI_GET_FLAG(GPIO_PIN_7))
     {
         HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,0);
+        car_controller_disable_automatic_control(&car_controler);
+        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
     }
 
-    __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
-    __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
     //__HAL_GPIO_EXTI_CLEAR_IT(EXTI9_5_IRQn);
 }
 /* USER CODE END 1 */
