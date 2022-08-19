@@ -35,7 +35,7 @@ void elm_send_query(elm_t *device, char * command, uint16_t size_command, uint16
 
 uint8_t elm_parse_speed(elm_t *device)
 {
-    if(device->rec_buf[0] != "N" && device->rec_buf[1] != "O") {
+    if(device->rec_buf[0] != "N" && device->rec_buf[1] != "O") {    // just find 41, or something
         device->valid_reading = 1;
         char speed[2];
         speed[0] = device->rec_buf[6];

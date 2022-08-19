@@ -164,24 +164,12 @@ dongle.rec_buf = receive_buffer;
   {
 
 
-      char command[] = "010D\r";
-      elm_send_query(&dongle,command,sizeof command,8);
 
-
-
-
-
+      elm_send_query(&dongle,ELM_QUERY_SPEED,sizeof ELM_QUERY_SPEED,ELM_QUERY_SPEED_DATA_SIZE);
 
 
       HAL_Delay(1000);
 
-      for(int i = 0; i<64; i++)
-      {
-          if(dongle.rec_buf[i]==0 || dongle.rec_buf[i]=='\r')
-          {
-              dongle.rec_buf[i] = ' ';
-          }
-      }
 
       printf("Received: %s \r\n", dongle.rec_buf);
       if(dongle.valid_reading) {
@@ -488,12 +476,16 @@ void TIM2_IRQHandler(void)  //main refresh loop
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
     HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,1);
+
+    for(int i = 0; i<64; i++)
+    {
+        if(dongle.rec_buf[i]==0 || dongle.rec_buf[i]=='\r')
+        {
+            dongle.rec_buf[i] = ' ';
+        }
+    }
+
     elm_parse_speed(&dongle);
-//   for(int i = 0; i<64; i++)
-//      {
-//
-//       receive_buffer[i]=' ';
-//      }
 }
 
 /* USER CODE END 4 */

@@ -1,29 +1,6 @@
 #include <throttle.h>
 #include "misc.h"
 
-void car_controller_set_output_throttle(car_t* instance, uint16_t value )
-{
-    if(instance->controler_engaged == 0)
-    {
-        instance->throttle_raw_out = 0;
-        return;
-    }
-    uint16_t dac_val;
-    dac_val = value;//instance->zero_throttle_dac_offset + (value * (CAR_MAX_DAC_VAL - instance->zero_throttle_dac_offset)) / CAR_MAX_ADC_DAC_STEPS;
-
-    instance->throttle_raw_out = dac_val;
-
-    if(value >= CAR_MAX_ADC_DAC_STEPS )
-    {
-
-        dac_val = CAR_MAX_DAC_VAL;
-    }
-
-
-
-    return;
-}
-
 void car_controller_update_accelerator_raw_input(car_t * instance)
 {
     uint16_t value;
@@ -32,6 +9,7 @@ void car_controller_update_accelerator_raw_input(car_t * instance)
     adc_val = HAL_ADC_GetValue(instance->accelerator_adc_handler);
     value = adc_val;//((adc_val-instance->zero_accelerator_adc_offset)*CAR_MAX_ADC_DAC_STEPS)/instance->max_accelerator_adc_val; //Also for adc
     instance->accelerator_raw_in = value;
+    car_calculate_accelerator_scaled_value(instance);
 
     return;
 }
@@ -40,7 +18,6 @@ void car_throttle_handler(car_t * instance)
 {
      //get current pedal throttle
     car_controller_update_accelerator_raw_input(instance);
-    car_calculate_accelerator_scaled_value(instance);       //calculate accelerator percent
     if(instance->state == CAR_STATUS_DIRECT)
     {
         instance->throttle_percent = instance->accelerator_percent; //set throttle value
@@ -87,3 +64,14 @@ void car_set_throttle_percent(car_t * instance)
     throttle = int_constraint(throttle,0,CAR_MAX_DAC_VAL);
     instance->throttle_raw_out = throttle;
 }
+
+void car_controller_enable_automatic_control(car_t * instance)
+{
+    instance->state = CAR_STATUS_CONTROLLED;
+}
+
+void car_controller_disable_automatic_control(car_t * instance)
+{
+    instance->state = CAR_STATUS_DIRECT ;
+}
+

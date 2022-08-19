@@ -214,7 +214,16 @@ void EXTI9_5_IRQHandler()
 {
 
 //    HAL_GPIO_EXTI_IRQHandler(5);
-    HAL_GPIO_TogglePin(LD3_GPIO_Port,LD3_Pin);
+
+    if(__HAL_GPIO_EXTI_GET_FLAG(GPIO_PIN_5))
+    {
+        HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,1);
+    }
+    if(__HAL_GPIO_EXTI_GET_FLAG(GPIO_PIN_7))
+    {
+        HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,0);
+    }
+
     __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
     __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
     //__HAL_GPIO_EXTI_CLEAR_IT(EXTI9_5_IRQn);

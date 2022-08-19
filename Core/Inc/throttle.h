@@ -27,7 +27,6 @@ typedef enum car_state
 typedef struct car
 {
     car_state_t state;
-    uint8_t passthrough_engaged;
     uint8_t controler_engaged;
     DAC_HandleTypeDef * throttle_dac_handler;
     ADC_HandleTypeDef * accelerator_adc_handler;
@@ -37,7 +36,6 @@ typedef struct car
     uint16_t accelerator_raw_in;
 
     float accelerator_percent; // 0-100
-    float saved_throttle_value;
     float throttle_percent;
 
 
@@ -45,18 +43,18 @@ typedef struct car
     uint16_t ecu_en_pin;
 
 } car_t;
-void car_controller_init();
+//void car_controller_init();
 
-void car_controller_execute_throttle(car_t * instance);
+void car_controller_execute_throttle(car_t * instance);     //Set throttle position to one given by throttle_percent
 
-void car_controller_set_output_throttle(car_t *instance, uint16_t value);
+void car_controller_update_accelerator_raw_input(car_t * instance);     //Read input throttle position and update the structure, calculate percent input
 
-void car_controller_update_accelerator_raw_input(car_t * instance);
+void car_calculate_accelerator_scaled_value(car_t * instance);  //Update accelerator percent value
 
-void car_calculate_accelerator_scaled_value(car_t * instance);  //Update acclerator percent value
-
-void car_set_throttle_percent(car_t * instance);
+void car_set_throttle_percent(car_t * instance);    // Sets raw out calculated from throttle percent
 
 void car_throttle_handler(car_t * instance);
 
-void car_scale_values(car_t * instance);
+void car_controller_enable_automatic_control(car_t * instance);
+
+void car_controller_disable_automatic_control(car_t * instance);
