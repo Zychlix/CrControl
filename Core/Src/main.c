@@ -52,6 +52,7 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 volatile car_t car_controler;
 volatile elm_t dongle;
+volatile pid_controller_t pid;
 
 volatile char receive_buffer[64];
 /* USER CODE END PV */
@@ -138,6 +139,7 @@ int main(void)
     car_controler.ecu_en_pin = PEDAL_EN_Pin;
     car_controler.ecu_en_port = PEDAL_EN_Port;
     car_controler.state = CAR_STATUS_DIRECT;
+    car_controler.controller = &pid;
 
     HAL_DAC_Start(&hdac1,0);
     HAL_ADC_Start(&hadc1);

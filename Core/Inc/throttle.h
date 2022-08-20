@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include "stm32l4xx_hal.h"
 #include "stdbool.h"
+#include "PID.h"
 
 #define CAR_MAX_DAC_VAL 4095
 #define CAR_MAX_ADC_DAC_STEPS 4096
@@ -42,6 +43,8 @@ typedef struct car
 
     uint16_t * ecu_en_port;
     uint16_t ecu_en_pin;
+
+    pid_controller_t * controller;
 
 } car_t;
 //void car_controller_init();
