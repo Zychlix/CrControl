@@ -18,12 +18,17 @@ void car_throttle_handler(car_t * instance)
 {
      //get current pedal throttle
     car_controller_update_accelerator_raw_input(instance);
+
     if(instance->state == CAR_STATUS_DIRECT)
     {
         instance->throttle_percent = instance->accelerator_percent; //set throttle value
     }
     if(instance->state == CAR_STATUS_CONTROLLED)
     {
+        if(instance->accelerator_percent>95){
+            car_controller_disable_automatic_control(instance); // A type of failsafe
+        }
+
         instance->throttle_percent = instance->saved_throttle_value;
     }
 

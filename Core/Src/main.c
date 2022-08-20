@@ -163,8 +163,6 @@ dongle.rec_buf = receive_buffer;
   while (1)
   {
 
-
-
       elm_send_query(&dongle,ELM_QUERY_SPEED,sizeof ELM_QUERY_SPEED,ELM_QUERY_SPEED_DATA_SIZE);
 
 
@@ -486,6 +484,13 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
     }
 
     elm_parse_speed(&dongle);
+    if(&dongle.valid_reading)
+    {
+        uint32_t time = HAL_GetTick();
+        dongle.velocity_read_interval = time-dongle.velocity_read_timestamp;
+        dongle.velocity_read_timestamp = time;
+
+    }
 }
 
 /* USER CODE END 4 */

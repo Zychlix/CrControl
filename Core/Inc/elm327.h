@@ -18,6 +18,10 @@ typedef struct elm
 
     uint8_t current_speed;
 
+    uint16_t current_rpm;
+    uint32_t velocity_read_interval;
+    uint32_t velocity_read_timestamp;
+
     volatile char * rec_buf;
 
     int8_t status;
